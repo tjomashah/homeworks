@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product list</title>
+    <style>
+        li {
+            list-style-type: none;
+        }
+
+        ul {
+            margin-left: 0;
+            padding-left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Які види продуктів із вказаного списку, тобі необхідно купити?</h2>
+    </header>
+
+    <main>
+
+        <form>
+            <fieldset>
+                <ul>
+                    <li><input type="checkbox" id="product1" name="product1" value="vegetables">
+                        <label for="product1">Овочі</label></li>
+                    <li><input type="checkbox" id="product2" name="product2" value="fruits">
+                        <label for="product2">Фрукти</label></li>
+                    <li><input type="checkbox" id="product3" name="product3" value="meat">
+                        <label for="product3">М'ясні</label>
+                    <li><input type="checkbox" id="product4" name="product4" value="milky">
+                        <label for="product4">Молочні</label>
+                    <li><input type="checkbox" id="product5" name="product5" value="candy">
+                        <label for="product5">Солодощі</label>
+                    <li><input type="checkbox" id="product6" name="product6" value="all">
+                        <label for="product6">Все з вище перерахованого</label>
+                </ul>
+                <div>
+                    <input type="submit" value="Купити">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+.web-title {
+    color: #FEFEFF;
+    background-color: #A62A2A;
+    text-align: center;
+    font-size: 18px;
+}
+
+.sunset-img {
+    text-align: center;
+}
+
+p .imp-text {
+    font-weight: 700;
+}
+
+p .align-text {
+    font-style: italic;
+    color: #1A0AAE;
+    font-weight: 500;
+}
+
+div .border-style {
+    border: 3px dashed black;
+}
+
+span .col-style {
+    color: #3C35B0;
+} 
+
+.foot-text {
+    color: #ECF5F2;
+    background-color: black;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.img-block {
+    text-align: center;
+}
+
+.main-info {
+    margin-left: 300px;
+    margin-right: 300px;
+}

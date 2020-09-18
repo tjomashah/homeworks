@@ -1,0 +1,62 @@
+.profession-time-symbol {
+    color: #635858;
+}
+
+.place-of-work {
+    color: #ff6b08;
+}
+
+.all-info {
+    padding: 30px 50px;    
+}
+
+.main-info {
+    background-color: #f0eeee;
+    border-radius: 5px;
+    float: left;
+    width: 70%;
+    min-height: 500px;
+    margin-left: 30px;  
+}
+
+#my-info {
+    margin-left: 30px;
+    margin-right: 5px;
+    border: #635858 2px solid;
+    background-color: #cedddd
+}
+
+
+.profession-duties-item {
+    color: #595959;
+   
+}
+
+.sidebar {
+    background-color: #5f7e7e;
+    float: left;
+    width: 27%;
+    border-radius: 5px;
+}
+
+.info {
+    color: #000000;
+    margin-left: 20px;
+} 
+
+.my-info-skills {
+    margin-left: 20px;   
+}
+
+.my-contacts {
+    color: #351666;
+}
+
+.my-position-name {
+    margin-left: 10px;
+}
+
+.info-sections {
+    margin-left: 25px;
+    padding-bottom: 3px;
+}
