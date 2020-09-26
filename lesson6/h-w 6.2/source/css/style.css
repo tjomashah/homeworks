@@ -1,0 +1,76 @@
+* {
+    margin-left: 0;
+    padding-left: 0;
+    transition: all .1s ease-in;
+}
+
+ul li {
+    list-style-type: none;
+    height: 35px;
+    border: 1px solid rgb(134,28,24);
+    font-size: 18px;
+    padding-top: 10px;
+    color: rgb(253,253,251);
+    background-color: rgb(139,132,160);
+}
+
+.content-shop-list-title {
+    background-color: rgb(70,78,86);
+}
+
+header {
+    color: rgb(255,127,122);
+    text-align: center;
+}
+
+.checkbox-content {
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 0.9em;
+    font-size: 17px;
+    padding: 25px 0 30px;
+}
+
+.content-main-back-color{
+    background-color: rgb(54,61,67);
+    margin-top: -19px;
+}
+
+.checkbox-content label {
+    padding: -10px;
+    background-color: rgb(136,131,158);
+    
+}
+
+button {
+    background-color: rgb(70,78,86);
+    border: none;
+    width: 500px;
+    color: rgb(216,110,106);
+    height: 50px;
+}
+
+button:focus {
+    outline: none;
+}
+
+section {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+}
+
+ul li:hover {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    background-color: rgb(99,93,120);
+}
+
+.checkbox-cont input:focus + label {
+    text-decoration: underline;
+}
