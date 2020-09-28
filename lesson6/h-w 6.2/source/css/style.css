@@ -4,6 +4,15 @@
     transition: all .1s ease-in;
 }
 
+h1 {
+    padding-top: 30px;
+}
+
+h3 {
+    margin-top: -15px;
+    padding-bottom: 25px;
+}
+
 ul li {
     list-style-type: none;
     height: 35px;
@@ -38,8 +47,6 @@ header {
 
 .checkbox-content label {
     padding: -10px;
-    background-color: rgb(136,131,158);
-    
 }
 
 button {
@@ -64,12 +71,22 @@ input[type="checkbox"] {
     width: 0;
 }
 
-ul li:hover {
+li:hover {
     border-top: 2px solid white;
     border-bottom: 2px solid white;
     background-color: rgb(99,93,120);
 }
 
-.checkbox-cont input:focus + label {
-    text-decoration: underline;
+ul li:active {
+    text-decoration: line-through;
+    background-color: rgb(125,118,149);
+    color: rgb(167,156,171);
+}
+
+li::before {
+    content: '\f0c8';
+    color: rgb(223,223,223);
+    background-color: rgb(223,223,223);
+    margin-left: 10px;
+    padding-left: 3px;
 }
