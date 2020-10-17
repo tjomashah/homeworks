@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="source/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="background">
+        <div class="wrapper">
+            <header class="content__logo">
+                <img src="./source/img/wrapper logo.png" alt="wrapper logo">
+            </header>
+            <div class="wrapper__content">
+                <div class="content__product">
+                    <div class="product__view">
+                        <img src="./source/img/wrapper Nike-SB.png" alt="wrapper Nike-SB">
+                    </div>
+                    <div class="product__color">
+                        <input class="color__input" id="blue" name="color" type="radio" checked>
+                        <label class="color__label" for="blue"></label>
+
+                        <input class="color__input" id="white" name="color" type="radio">
+                        <label class="color__label" for="white"></label>
+
+                        <input class="color__input" id="red" name="color" type="radio">
+                        <label class="color__label" for="red"></label>
+
+                        <input class="color__input" id="cyan" name="color" type="radio">
+                        <label class="color__label" for="cyan"></label>
+                    </div>
+                </div>
+                <div class="product__info info">
+                    <div class="info__text">
+                        <h3 class="text__header">Nike SB Stefan</h3>
+                        <h3 class="text__header">Janoski Max</h3>
+                        <p class="text__text">Unisex Skateboarding Shoe</p>
+                    </div>
+                    <div class="info__option">
+                        <div class="option__mark">
+                            <img class="mark__select" src="./source/img/Smart Object.png" alt="Smart Object">
+                            <img class="mark__select" src="./source/img/Smart Object.png" alt="Smart Object">
+                            <img class="mark__select" src="./source/img/Smart Object.png" alt="Smart Object">
+                            <img class="mark__select" src="./source/img/Smart Object.png" alt="Smart Object">
+                            <img class="mark__select" src="./source/img/Smart Object.png" alt="Smart Object">
+                        </div>
+                        <form class="option__product">
+                            <div class="product__value">
+                                <select class="value__select" name="size" id="size">
+                                    <option value="40">42</option>
+                                    <option value="41">43</option>
+                                    <option value="42">44</option>
+                                </select>
+                                <label class="value__label" for="size">Size
+                                    <i class="fas fa-chevron-down"></i>
+                                </label>
+                            </div>
+
+                            <div class="product__value">
+                                <select class="value__select" name="qty" id="qty">
+                                    <option value="high">high</option>
+                                    <option value="normal">normal</option>
+                                    <option value="bad">bad</option>
+                                </select>
+                                <label class="value__label" for="qty">Qty
+                                    <i class="fas fa-chevron-down"></i>
+                                </label>
+                            </div>
+                            <button class="product__btn" type="submit">Add to cart</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
