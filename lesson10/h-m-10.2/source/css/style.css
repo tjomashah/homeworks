@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Proxima Nova Regular" format('opentype');
+    src: url("../fonts/Proxima_Nova_Regular.otf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "ofont.ru_Futura_PT" format("truetype");
+    src: url(../fonts/ofont.ru_Futura_PT.ttf);
+    font-weight: normal;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.bg {
+    background-color: #464f54;
+    height: 100%;
+    min-height: 900px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.wrapper {
+    width: 95%;
+    max-width: 1060px;
+    background-color: white;
+    padding: 170px 124px 25px 124px;
+}
+
+.wrapper_place {
+    font-size: 19px;
+    color: #b5b5b5;
+    font-family: "Proxima Nova Regular"
+}
+
+.wrapper_header {
+    font-size: 75px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-family: "Futura_PT";
+}
+
+.wrapper_question {
+    font-size: 30px;
+    color: #8f8f8f;
+    font-style: italic;
+}
+
+.wrapper_text {
+    font-size: 26px;
+    padding: 25px 0 10px;
+    line-height: 40px;
+}
+
+/* .header {
+    
+} */
+
+.header_black_block {
+    width: 100%;
+    max-width: 920px;
+    height: 100%;
+    max-height: 185px;
+    background-color: black;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    padding: 45px 0 50px 60px;
+}
+
+.header_orange_block {
+    width: 100%;
+    max-width: 860px;
+    height: 100%;
+    max-height: 80px;
+    background-color: orange;
+    position: absolute;
+    top: 235px;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* .block_icons {
+    
+} */
+
+.block_input h5 {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Proxima Nova Regular';
+    letter-spacing: 5px;
+    color: #767676;
+}
+
+.block_input input {
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 3px solid #303030;
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    line-height: 70px;
+    color: #fff;
+}
+
+.block_input:focus {
+    outline: none;
+}
+
+.block_icons {
+    padding-left: 43px;
+}
+
+.icons_tool {
+    padding: 0 10px;
+}
