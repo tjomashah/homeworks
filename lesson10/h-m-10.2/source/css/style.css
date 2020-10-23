@@ -36,13 +36,15 @@ body {
     width: 95%;
     max-width: 1060px;
     background-color: white;
-    padding: 170px 124px 25px 124px;
+    padding: 170px 140px 25px 145px;
 }
 
 .wrapper_place {
     font-size: 19px;
     color: #b5b5b5;
-    font-family: "Proxima Nova Regular"
+    font-family: "Proxima Nova Regular";
+    letter-spacing: 5px;
+    text-transform: uppercase;
 }
 
 .wrapper_header {
@@ -126,4 +128,8 @@ body {
 
 .icons_tool {
     padding: 0 10px;
+}
+
+.wrapper_text span {
+    font-style: italic;
 }
