@@ -53,7 +53,7 @@ body {
     display: flex;
     justify-content: center;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .content__header {
@@ -77,22 +77,28 @@ body {
 }
 
 .controls__user {
-    /* display: flex; */
     justify-content: space-around;
     width: 35%;
 } 
 
 .controls__user input {
     border: none;
-    background-color: #00c4c4;
+    background-color: rgba(125,223,223,0.7);
     margin-bottom: 5px;
     height: 50px;
     padding-left: 10px;
     /* color: white; */
 }
 
+.controls__user input::placeholder,
+textarea::placeholder {
+    color: white;
+    font-weight: lighter;
+
+}
+
 .controls__user textarea {
-    background-color: #00c4c4;
+    background-color: rgba(125,223,223,0.7);
     border: none;
     padding: 10px 0 0 10px;
     /* color: white; */
@@ -104,14 +110,12 @@ body {
 
 .controls__cahee-info span {
     font-size: 17px;
-    font-family: 'Raleway', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
 }
 
 .controls__cahee-info p {
     font-size: 20px;
-    font-family: 'Raleway', sans-serif;
     font-weight: lighter;
 }
 
@@ -132,14 +136,12 @@ body {
 
 .footer__rights {
     font-size: 16px;
-    font-family: 'Raleway', sans-serif;
     font-weight: lighter;
     color: #616161;
 }
 
 .footer__author {
     font-size: 15px;
-    font-family: 'Raleway', sans-serif;
     font-weight: lighter;
     color: #939393;
 }
@@ -151,4 +153,16 @@ body {
 a {
     color: black;
     text-decoration: none;
+}
+
+.controls__user input:hover,
+.controls__user textarea:hover {
+    background-color: rgb(0,196,196);
+    border-left: 4px solid rgb(53,91,130);
+    transition: linear 1s all;
+}
+
+.controls__user input:focus,
+.controls__user textarea:focus {
+    outline: none;
 }

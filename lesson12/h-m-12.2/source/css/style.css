@@ -126,20 +126,15 @@ body {
     padding-left: 5px;
 } 
 
-/* .wrapper label:nth-child(2):hover,
-.wrapper label:nth-child(4):hover {
-    color: white;
-    border-bottom: 2px solid red;
-} */
-
 .wrapper input:first-child:checked ~ .wrapper__form > div:last-child,
 .wrapper input:nth-child(4):checked ~ .wrapper__form > div:last-child{
     display: none;
 }
 
-/* .wrapper__form ~ .form__info > .info__user div.user__checkbox input:checked {
+/* .info__user > div.user__checkbox input[type="checkbox"]:checked {
     background-color: seagreen;
 } */
+
 
 #info__yourself {
     color: white;
@@ -176,107 +171,3 @@ body {
 .wrapper span:nth-child(3) {
     visibility: hidden;
 }
-
-
-
-
-
-
-
-
-
-/* .wrapper__form input:first-child:checked ~ .tab_content > div:last-child,
-.wrapper__form input:nth-child(3):checked ~ .tab_content > div:first-child {
-    display: none;
-} */
-
-/* .background {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.wrapper {
-    padding: 0 24px;
-    height: 100%;
-    width: 100%;
-    max-width: 334px;
-    max-height: 532px;
-}
-
-.wrapper__header {
-    background-color: #efe5aa;
-    height: 13.34%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.wrapper__header h3 {
-    font-size: 14px;
-}
-
-.wrapper__header h4 {
-    font-size: 10px;
-}
-
-.wrapper__price {
-    font-size: 36px;
-}
-
-.wrapper__form input[type="radio"] {
-    visibility: hidden;
-    width: 0;
-}
-
-
-
-.card_number input {
-    width: 100%;
-    height: 40px;
-}
-
-#months {
-    width: 60%;
-    height: 40px;
-}
-
-#years {
-    width: 30%;
-    height: 40px;
-}
-
-.exp_date {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.security_code input {
-    width: 30%;
-    height: 40px;
-}
-
-.tab_content input, select {
-    border: none;
-    border-bottom: 1px solid black;
-}
-
-.card_number {
-    position: relative;
-}
-
-.card_number label {
-    position: absolute;
-    top: 20px;
-}
-
-.card_number input:focus + div label {
-    transform: translateY(-25px);
-    transition: 0.5s;
-}
-
-.card_number input:focus {
-    outline: none;
-} */
