@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; 
+} 
+
+.background {
+    height: 100%;
+    width: 90%;
+    background: url("../img/bg.png") no-repeat;
+    margin: 0 auto;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.wrapper_logo {
+    position: absolute;
+    top: 21px;
+    left: 30px;
+}
+
+ul li {
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    color: #ecf0e8;
+    font-size: 15px;
+    padding-left: 40px;
+}
+
+ ul li:last-child:after {
+    content: "en";
+    color: #ecf0e8;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #bfd730;
+    padding: 4px;
+    margin-left: 30px; 
+}
+
+.wrapper_menu li {
+    display: inline-block;
+}
+
+.wrapper_menu {
+    position: absolute;
+    top: 45px;
+    right: 90px;
+}
+
+.wrapper_menu_symbol {
+    position: absolute;
+    top: 45px;
+    right: 45px;
+}
+
+.wrapper_uni_name {
+    position: absolute;
+    top: 280px;
+    left: 395px;
+    color: #ccd0d0;
+    max-width: 700px;
+}
+
+.wrapper_num_color {
+    color: #bfd730;
+}
+
+.wrapper_uni_vertical {
+    float: left;
+}
+
+.wrapper_uni_info {
+    padding-left: 65px;
+}
+
+h1 {
+    font-size: 65px;
+    font-family: sans-serif;
+    padding-left: 60px;
+    padding-top: 40px;
+}
+
+/* /* ul li:hover {
+    border-top: 1px solid #bfd730;
+    border-width: 1px;  
+}  */
+
+.first_square {
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    position: absolute;
+    top: 215px;
+    left: 290px;
+}
+
+.second_square {
+    width: 18px;
+    height: 18px;
+    background-color: #8dc63f;
+    position: absolute;
+    top: 660px;
+    left: 230px;
+}
+
+.third_square {
+    width: 18px;
+    height: 18px;
+    background-color: #8dc63f;
+    position: absolute;
+    top: 685px;
+    left: 250px;
+    /* bottom: 95px; */
+}
+
+.fourth_square {
+    width: 18px;
+    height: 18px;
+    background-color: #8dc63f;
+    position: absolute;
+    top: 170px;
+    right: 220px;
+}
+
+.fifth_square {
+    width: 18px;
+    height: 18px;
+    background-color: #8dc63f;
+    position: absolute;
+    top: 625px;
+    right: 220px;
+}
+
+.sixth_square {
+    width: 18px;
+    height: 18px;
+    background-color: #8dc63f;
+    position: absolute;
+    top: 660px;
+    right: 260px;
+}
+
+.seventh_square {
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    position: absolute;
+    top: 690px;
+    right: 260px;
+}
+
+.wrapper_mouse {
+    position: absolute;
+    top: 720px;
+    left: 800px;
+}
+
+.first_hover:hover::before {
+    content: "";
+    position: absolute;
+    bottom: 25px;
+    left: 40px;
+    width: 40px;
+    height: 1px;
+    background-color: #bfd730;
+}
+
+.second_hover:hover::before {
+    content: "";
+    position: absolute;
+    bottom: 25px;
+    left: 125px;
+    width: 60px;
+    height: 1px;
+    background-color: #bfd730;
+}
+
+.third_hover:hover::before {
+    content: "";
+    position: absolute;
+    bottom: 25px;
+    left: 228px;
+    width: 47px;
+    height: 1px;
+    background-color: #bfd730;
+}
+
+.fourth_hover:hover::before {
+    content: "";
+    position: absolute;
+    bottom: 25px;
+    left: 320px;
+    width: 45px;
+    height: 1px;
+    background-color: #bfd730;
+}
+
+.fifth_hover:hover::before {
+    content: "";
+    position: absolute;
+    bottom: 25px;
+    left: 410px;
+    width: 55px;
+    height: 1px;
+    background-color: #bfd730;
+}
+
+.sixth_hover:hover::before {
+    content: "";
+    position: absolute;
+    bottom: 25px;
+    left: 510px;
+    width: 37px;
+    height: 1px;
+    background-color: #bfd730;
+}

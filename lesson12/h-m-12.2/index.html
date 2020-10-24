@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./source/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="background">
+        <div class="background__mask">
+            <img src="./source/img/mask.png" alt="mask">
+        </div>
+        <div class="wrapper">
+            <input class="wrapper__tab1" type="radio" name="tab1" id="tab1">
+            <label id="tab1" for="tab1">Sign us</label>
+            <span>2</span>
+
+            <input class="wrapper__tab2" type="radio" name="tab2" id="tab2">
+            <label id="tab2" for="tab2">Join us</label>
+            <div class="wrapper__form">
+                <div id="form__info">
+                    <form class="info__user">
+                        <div class="user__name">
+                            <div><label for="username">Username</label></div>
+                            <input class="user__input" type="text" name="username" id="username" minlength="5">
+                            <div class="user__error">Error</div>
+                        </div>
+                        <div class="user__password">
+                            <div><label for="password">Password</label></div>
+                            <input class="user__input" type="password" name="password" id="password" minlength="8"
+                                required>
+                            <div class="user__error">Error</div>
+                        </div>
+                        <div class="user__checkbox">
+                            <input type="checkbox" class="checkbox__checked" id="check" name="check">
+                            <label for="check">Keep me signed in</label>
+                        </div>
+                        <div class="form__btn">
+                            <button>Sign in</button>
+                        </div>
+                        <div class="form__footer">
+                            <a href="#"><span>Forgot password</span></a>
+                            <a href="#"><span>Create an account</span></a>
+                        </div>
+                    </form>
+                </div>
+                <div id="info__yourself">
+                    <form class="yourself__age">
+                        <input type="checkbox" name="usersex" id="usersex">
+                        <label for="usersex">Male</label>
+                        <div>
+                            <input type="checkbox" name="usersex" id="usersex">
+                            <label for="usersex">Female</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <section class="background">
+        <div class="wrapper">
+            <div class="wrapper__header">
+                <div>
+                    <h3>Harold Finch</h3>
+                    <h4>Your Total</h4>
+                </div>
+                <div class="wrapper__price">
+                    <p>$88</p>
+                </div>
+            </div>
+            <div class="wrapper__form">
+                <input type="radio" id="tab_1" name="tab_panel" checked>
+                <label for="tab_1">Tab1</label>
+
+                <input type="radio" id="tab_2" name="tab_panel">
+                <label for="tab_2">Tab2</label>
+                <div class="tab_content">
+                    <div id="cart_payment">
+                        <form>
+                            <div class="card_number">
+                                <input type="text" name="" id="credit_number">
+                                <div>
+                                    <label for="credit_number">Credit card number</label>
+                                </div>
+                            </div>
+                            <div class="date">
+                                <label for="months">Expiration date</label>
+                                <div class="exp_date">
+                                    <select id="months">
+                                        <option value="January">January</option>
+                                        <option value="February">February</option>
+                                        <option value="March">March</option>
+                                    </select>
+
+                                    <select id="years">
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="security_code">
+                                <div>
+                                    <label for="cvv">CVV</label>
+                                </div>
+                                <input type="password" id="cvv">
+                                <span>3 or 4 digits - <a href="#">view example</a></span>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div id="bla_bla_bla">
+                        <form>
+                            <div>
+                                <input type="text" name="" id="">
+                                <label>hfjrgr</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+</body>
+
+</html>

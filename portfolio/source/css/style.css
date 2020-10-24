@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "Bazar";
+    src: url("fonts/Bazar.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Roboto Slab Regular";
+    src: url("fonts/RobotoSlab-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Roboto Slab Bold";
+    src: url("fonts/RobotoSlab-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  body {
+    background-image: url("../img/bg.png");
+  }
+  
+  .border {
+    margin-top: 20px;
+    border-top: 2px dashed rgba(0, 0, 0, 0.3);
+    border-bottom: 2px dashed rgba(255, 255, 255, 0.3);
+  }
+  
+  .wrapper {
+    background-size: 100% 100%;
+    border-top: 2px dashed rgba(255, 255, 255, 0.3);
+    border-bottom: 2px dashed rgba(0, 0, 0, 0.3);
+    outline-offset: -20px;
+    max-width: 1880px;
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  .header {
+    text-align: center;
+  }
+  
+  .header > h1 {
+    font-family: "Bazar";
+    font-size: 180px;
+    color: #393a3a;
+    text-shadow: 4px 4px #fcfaf7, 8px 8px #484a4d;
+  }
+  
+  .header > p {
+    font-family: "Oswald", sans-serif;
+    font-size: 32px;
+    color: #38353e;
+  }
+  
+  .header .separator > span {
+    font-family: "Roboto Slab Regular";
+    color: #3b3b3b;
+    font-size: 44px;
+  }
+  
+  .header .separator > span::before,
+  .header .separator > span::after {
+    content: "";
+    display: inline-block;
+    width: 80px;
+    border-top: 4px solid #3b3b3b;
+    transform: translateY(-13px);
+    margin: 0 15px;
+  }
+  /* .container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    height: 950px;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+  } */
+  .content > p {
+    font-family: "Roboto Slab Bold";
+    font-size: 24px;
+  }
+  .square {
+    width: 100%;
+    height: 316px;
+    background-color: #e3dfd7;
+  }
+  .content {
+    text-align: center;
+    background-color: #fbfaf6;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  .images {
+    background-color: #fbfaf6;
+  
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -20px auto 0;
+  }
+ 
+  

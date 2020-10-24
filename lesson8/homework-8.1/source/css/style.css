@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    width: 100%;
+}
+
+section {
+    box-sizing: border-box;
+    background-color: #b07cf7;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 90px;
+}
+
+.wrapper_header_info {
+    margin: 0 auto;
+    max-width: 565px;
+    height: 185px;
+    text-align: center;
+    padding: 50px 0 40px;
+    color: white;
+}
+
+.wrapper_header_text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    padding-top: 30px;
+    color: #eadcfd;
+}
+
+.wrapper_growing_food {
+    position: relative;
+    width: 28%;
+    height: 310px;
+    background: url(../img/img-center.png) no-repeat;
+    background: linear-gradient(); 
+    float: left;
+}
+
+.wrapper_green_smoothies {
+    position: relative;
+    width: 28%;
+    height: 310px;
+    background: url(../img/img-left.png) no-repeat;
+    float: left;
+    margin-left: 80px;
+    margin-right: 20px;
+    z-index: 1;
+}
+
+.gradient {
+    background: rgb(44, 41, 51);
+    background: linear-gradient(0deg, rgba(29, 27, 32, 0.953) 0%, rgba(61,57,57,0) 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    z-index: -1;
+}
+
+.wrapper_pesticides {
+    position: relative;
+    width: 28%;
+    height: 310px;
+    background: url(../img/img-right.png) no-repeat;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.green_smoothies_ftext {
+    position: absolute;
+    bottom: 55px;
+    left: 23px;
+    font-size: 20px;
+    color: white;
+    margin-right: 60px;
+    
+}
+
+.green_smoothies_stext {
+    position: absolute;
+    bottom: 20px;
+    left: 23px;
+    font-size: 13px;
+    color: #c0c3be;
+}
+
+.green_smoothies_day {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #4a505b;
+    border-radius: 4px;
+}
+
+.smoothies_day_fnum {
+    font-size: 32px;
+    color: white;
+    text-align: center;
+} 
+
+.smoothies_day_snum {
+    font-size: 21px;
+    color: white;
+    text-align: center;
+}
+
+.growing_food_ftext {
+    position: absolute;
+    bottom: 55px;
+    left: 23px;
+    font-size: 20px;
+    color: white;
+    margin-right: 60px;
+}
+
+.growing_food_stext {
+    position: absolute;
+    bottom: 20px;
+    left: 23px;
+    font-size: 13px;
+    color: #c0c3be;
+}
+
+.growing_food_day {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #4a505b;
+    border-radius: 4px;
+}
+
+.food_day_fnum {
+    font-size: 32px;
+    color: white;
+    text-align: center;
+} 
+
+.food_day_snum {
+    font-size: 21px;
+    color: white;
+    text-align: center;
+}
+
+.pesticide_ftext {
+    position: absolute;
+    bottom: 55px;
+    left: 23px;
+    font-size: 20px;
+    color: white;
+    margin-right: 60px;
+    
+}
+
+.pesticide_stext {
+    position: absolute;
+    bottom: 20px;
+    left: 23px;
+    font-size: 13px;
+    color: #c0c3be;
+}
+
+.pesticide_day {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #4a505b;
+    border-radius: 4px;
+}
+
+.pesticide_day_fnum {
+    font-size: 32px;
+    color: white;
+    text-align: center;
+} 
+
+.pesticide_day_snum {
+    font-size: 21px;
+    color: white;
+    text-align: center;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display:block;
+    height:0;
+}
+
+.wrapper_button {
+    margin-bottom: 80px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 55px;
+    background-color: #f72b3b;
+    font-size: 20px;
+    color: white;
+    border: none;
+}
+
+button:focus {
+    outline: none;
+}
+
