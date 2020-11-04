@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.wrapp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1920px;
+    max-height: 998px;
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 30%;
+    height: 15%;
+    border-bottom: solid 1px #ffcc00;
+    margin-bottom: 30px;
+}
+
+.header::after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: calc(1vw + 10px);
+    height: calc(1vw + 10px);
+    bottom: -10px;
+    background-image: url(../img/bonfire-icon.png);
+    background-size: cover;
+    border: solid 5px white;
+}
+
+.header p {
+    font-size: 0.94vw;
+}
+
+.header h1 {
+    font-size: 3.12vw;
+    color: #ffcc00;
+}
+
+.content {
+    display: flex;
+    width: 90%;
+}
+
+.container,
+.carousel,
+.carousel-inner {
+    height: 100%;
+}
+
+
+.unitBlock {
+    width: 100%;
+    height: 100%;
+}
+
+.unitBlock__photoBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    float: left;
+    border-right: solid 1px #ffcc00;
+}
+
+.photoBox__BorderCorners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: -2;
+    max-width: 420px;
+    max-height: 420px;
+    width: 20vw;
+    height: 20vw;
+    border: solid 1px #ffcc00;
+}
+
+.unitPhoto {
+    width: 90%;
+    height: 90%;
+    border: solid 1px #ffcc00;
+}
+
+.unitPhoto img {
+    width: 100%;
+}
+
+.photoBox__BorderCorners:before,
+.photoBox__BorderCorners:after {
+    content: "";
+    z-index: -1;
+    display: block;
+    position: absolute;
+    background: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.photoBox__BorderCorners:before {
+    width: calc(100% + 4px);
+    height: 60%;
+}
+
+.photoBox__BorderCorners:after {
+    height: calc(100% + 4px);
+    width: 60%;
+}
+
+.unitBlock__unitDiscription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    float: right;
+    padding: 30px 8%;
+
+}
+
+.unitBlock__unitDiscription h2 {
+    font-size: 1.88vw;
+    margin-bottom: 20px;
+    color: #666666;
+}
+
+.unitBlock__unitDiscription h2::after {
+    display: block;
+    position: relative;
+    content: '';
+    border-top: solid 1px #ffcc00;
+    width: 50%;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+}
+
+.unitBlock__unitDiscription h3 {
+    font-size: 1.25vw;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #666666;
+}
+
+.unitBlock__unitDiscription p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.72vw;
+    font-weight: 500;
+    line-height: 1.25vw;
+    color: #333333;
+    text-align: center;
+}
+
+.unitDiscription__socialLinks {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    width: 35%;
+}
+
+.socialLinks__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 30px;
+    max-height: 30px;
+    width: 1.56vw;
+    height: 1.56vw;
+    border: solid 0.10vw #cccccc;
+    border-radius: 15px;
+
+}
+
+.socialLinks__item p {
+    font-size: 0.7vw;
+    text-align: center;
+    color: #cccccc;
+    font-weight: 500;
+
+}
+
+.unitBlock__unitDiscription>p {
+    margin-bottom: 20px;
+}
+
+.unitBlock__unitDiscription svg line {
+    stroke: #ffcc00;
+}
+
+.unitBlock__unitDiscriptionBtn {
+    max-width: 140px;
+    max-height: 24px;
+    width: 7.29vw;
+    height: 1.24vw;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.73vw;
+    font-weight: 700;
+    border: solid 1px #ffcc00;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.unitBlock__unitDiscriptionBtn:focus {
+    outline: solid 2px #ffcc00;
+}
+
+
+/* Bootstrap changes */
+
+.carousel-control.left,
+.carousel-control.right,
+.carousel-control:hover,
+.left {
+    background-image: none;
+}
+
+.glyphicon {
+    top: 50%;
+    color: #ffcc00;
+
+}
+
+.carousel-control.right {
+    right: -20px;
+}
+
+.carousel-control.left {
+    left: -20px;
+}
+
+
+.carousel-indicators {
+    bottom: -50px;
+}
+
+.carousel-indicators li {
+    border: solid 1px #ffcc00;
+}
+
+.carousel-indicators .active {
+    background-color: #ffcc00;
+}
