@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <link rel="stylesheet" href="./source/css/style.css">
+    <link rel="stylesheet" href="./source/css/dist/style.css">
     <title>a_shahoval</title>
 </head>
 
@@ -72,12 +72,10 @@
         <div class="wrapper__services">
             <div class="services__list">
                 <ul>
-                    <li class="list__services"><a class="list__item" href="#">Online Shopping</a><img src="./source/img/shopping.png" alt="shopping">
-                    </li>
-                    <li class="list__services"><a class="list__item" href="#">Quality Product</a><img src="./source/img/product.png" alt="shopping"></li>
-                    <li class="list__services"><a class="list__item" href="#">Domestic & International Delivery</a><img src="./source/img/delivery.png" alt="shopping"></li>
-                    <li class="list__services"><a class="list__item" href="#">Well organized</a><img src="./source/img/carrot.png" alt="shopping">
-                    </li>                        
+                    <li class="list__services"><a class="list__item" href="#">Online Shopping</a><i class="fas fa-shopping-cart"></i></li>
+                    <li class="list__services"><a class="list__item" href="#">Quality Product</a><i class="fas fa-gift"></i></li>
+                    <li class="list__services"><a class="list__item" href="#">Domestic & International Delivery</a><i class="fas fa-globe"></i></li>
+                    <li class="list__services"><a class="list__item" href="#">Well organized</a><i class="fas fa-carrot"></i></li>                        
                 </ul>
             </div>
             <div class="services__view">
@@ -118,10 +116,11 @@
                 <img src="./source/img/fruit.png" alt="fruit">
             </div>
         </div>
+        <div class="gallery__button">
+            <button class="button__click">View more</button>
+        </div>
     </div> 
-    <div class="gallery__button">
-        <button class="button__click">View more</button>
-    </div>
+    
 </section>
 
     <!-- Subscribe to us -->
@@ -135,7 +134,7 @@
             </div>
             <form class="subscribe__form">
                 <div class="form__input">
-                    <input type="email" id="email" placeholder="Your email address...">
+                    <input type="email" id="user-email" placeholder="Your email address...">
                 </div>
                 <div class="form__button">
                     <button class="button__subscribe">Subscribe</button>
@@ -224,9 +223,9 @@
                 </div>
             </div>
             <footer class="contacts__footer">
-                <span class="footer__rights">© 2015 Company. All right reserved.</span>
-                <img src="./source/img/logo-small.png" alt="logo-small">
-                <span class="footer__author">Made with <span>love</span> by Auskteez</span>
+                <div><span class="footer__rights">© 2015 Company. All right reserved.</span></div>
+                <div><img src="./source/img/logo-small.png" alt="logo-small"></div>
+                <div><span class="footer__author">Made with <span>love</span> by Auskteez</span></div>
             </footer>
         </div>
     </section>
