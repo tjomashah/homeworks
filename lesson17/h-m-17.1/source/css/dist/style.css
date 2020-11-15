@@ -137,7 +137,8 @@ body {
     flex-direction: column;
     position: absolute;
     top: 11%;
-    right: -20%;
+    right: 1%;
+    width: 25%;
   }
   .container__home .nav__list .nav__item {
     display: block;
@@ -197,7 +198,8 @@ body {
     flex-direction: column;
     position: absolute;
     top: 11%;
-    right: -21%;
+    right: 5%;
+    width: 20%;
   }
   .container__home .nav__list .nav__item {
     display: block;

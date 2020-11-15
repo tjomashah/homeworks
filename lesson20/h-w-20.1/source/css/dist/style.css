@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  background-color: #9789f9;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.container .wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container .wrapper .wrapper__content {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.container .wrapper .wrapper__content ul {
+  display: flex;
+  flex-direction: column;
+  height: 35%;
+  justify-content: space-between;
+}
+.container .wrapper .wrapper__content ul > li {
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+.container .wrapper .wrapper__content .box__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.container .wrapper .wrapper__content .box__header::before {
+  content: "$";
+  display: block;
+  position: absolute;
+  top: 12px;
+  right: 60px;
+}
+.container .wrapper .wrapper__content .box__header > .box__number {
+  font-size: 60px;
+}
+.container .wrapper .wrapper__content .box__header > p:last-child {
+  text-transform: uppercase;
+  font-family: "Bebas Neue", cursive;
+  font-size: 24px;
+}
+.container .wrapper .wrapper__content .right-header::before {
+  content: "$";
+  display: block;
+  position: absolute;
+  top: 12px;
+  right: 100px;
+}
+.container .wrapper .wrapper__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  flex-basis: 30%;
+  height: 410px;
+  background-color: #f5f4f9;
+  position: relative;
+}
+.container .wrapper .wrapper__box .box__btn {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 25px;
+  background-color: #6fcffb;
+  margin-bottom: -35px;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 1px;
+}
+.container .wrapper .wrapper__box .box__btn:focus {
+  outline: none;
+}
+.container .wrapper .wrapper__center-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  flex-basis: 30%;
+  height: 500px;
+  background-color: #f5f4f9;
+  position: relative;
+}
+.container .wrapper .wrapper__center-box .center-header::before {
+  content: "$";
+  display: block;
+  position: absolute;
+  top: 12px;
+  right: 65px;
+}
+.container .wrapper .wrapper__center-box .box__btn {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 25px;
+  background-color: #fd8d7b;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 1px;
+}
+.container .wrapper .wrapper__center-box .box__btn:focus {
+  outline: none;
+}
+.container .wrapper .wrapper__center-box .center-box__footer p {
+  font-size: 10px;
+  color: #ccccce;
+}
+.container .wrapper .wrapper__center-box::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 7px;
+  right: 7px;
+  background-color: #fd8d7b;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+}
+.container .wrapper .wrapper__center-box .center-box__popular {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  background-color: #fd8d7b;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .wrapper .wrapper__center-box .center-box__popular::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -7px;
+  left: 20px;
+  background-color: #fd8d7b;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+.container .wrapper .wrapper__center-box .center-box__popular:hover::after {
+  content: "Popular";
+  position: absolute;
+  top: 3px;
+  right: -75px;
+  background-color: #3b4040;
+  color: white;
+  font-size: 10px;
+  text-transform: uppercase;
+  width: 70px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 0 0 10px;
+}
