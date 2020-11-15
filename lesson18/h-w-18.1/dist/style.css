@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(45, 153, 77, 0.288);
+}
+
+.wrapper {
+  width: 600px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.wrapper__card {
+  width: 250px;
+  height: 330px;
+  position: relative;
+}
+.wrapper .card__box {
+  display: none;
+}
+.wrapper .card__box:checked + .card {
+  animation: cardsMoving 2s ease-in-out both;
+}
+.wrapper .card__box:checked + .card .card__face_down {
+  transform: perspective(300px) rotateY(90deg);
+  transition-delay: 0s;
+}
+.wrapper .card__box:checked + .card .card__face_up {
+  transform: perspective(300px) rotateY(0deg);
+  transition-delay: 0.9s;
+}
+
+.card {
+  position: absolute;
+  left: -350px;
+}
+.card[for="1"] {
+  z-index: 36;
+  left: -350.5px;
+  top: 0px;
+}
+.card[for="2"] {
+  z-index: 35;
+  left: -351px;
+  top: 0.5px;
+}
+.card[for="3"] {
+  z-index: 34;
+  left: -351.5px;
+  top: 1px;
+}
+.card[for="4"] {
+  z-index: 33;
+  left: -352px;
+  top: 1.5px;
+}
+.card[for="5"] {
+  z-index: 32;
+  left: -352.5px;
+  top: 2px;
+}
+.card[for="6"] {
+  z-index: 31;
+  left: -353px;
+  top: 2.5px;
+}
+.card[for="7"] {
+  z-index: 30;
+  left: -353.5px;
+  top: 3px;
+}
+.card[for="8"] {
+  z-index: 29;
+  left: -354px;
+  top: 3.5px;
+}
+.card[for="9"] {
+  z-index: 28;
+  left: -354.5px;
+  top: 4px;
+}
+.card[for="10"] {
+  z-index: 27;
+  left: -355px;
+  top: 4.5px;
+}
+.card[for="11"] {
+  z-index: 26;
+  left: -355.5px;
+  top: 5px;
+}
+.card[for="12"] {
+  z-index: 25;
+  left: -356px;
+  top: 5.5px;
+}
+.card[for="13"] {
+  z-index: 24;
+  left: -356.5px;
+  top: 6px;
+}
+.card[for="14"] {
+  z-index: 23;
+  left: -357px;
+  top: 6.5px;
+}
+.card[for="15"] {
+  z-index: 22;
+  left: -357.5px;
+  top: 7px;
+}
+.card[for="16"] {
+  z-index: 21;
+  left: -358px;
+  top: 7.5px;
+}
+.card[for="17"] {
+  z-index: 20;
+  left: -358.5px;
+  top: 8px;
+}
+.card[for="18"] {
+  z-index: 19;
+  left: -359px;
+  top: 8.5px;
+}
+.card[for="19"] {
+  z-index: 18;
+  left: -359.5px;
+  top: 9px;
+}
+.card[for="20"] {
+  z-index: 17;
+  left: -360px;
+  top: 9.5px;
+}
+.card[for="21"] {
+  z-index: 16;
+  left: -360.5px;
+  top: 10px;
+}
+.card[for="22"] {
+  z-index: 15;
+  left: -361px;
+  top: 10.5px;
+}
+.card[for="23"] {
+  z-index: 14;
+  left: -361.5px;
+  top: 11px;
+}
+.card[for="24"] {
+  z-index: 13;
+  left: -362px;
+  top: 11.5px;
+}
+.card[for="25"] {
+  z-index: 12;
+  left: -362.5px;
+  top: 12px;
+}
+.card[for="26"] {
+  z-index: 11;
+  left: -363px;
+  top: 12.5px;
+}
+.card[for="27"] {
+  z-index: 10;
+  left: -363.5px;
+  top: 13px;
+}
+.card[for="28"] {
+  z-index: 9;
+  left: -364px;
+  top: 13.5px;
+}
+.card[for="29"] {
+  z-index: 8;
+  left: -364.5px;
+  top: 14px;
+}
+.card[for="30"] {
+  z-index: 7;
+  left: -365px;
+  top: 14.5px;
+}
+.card[for="31"] {
+  z-index: 6;
+  left: -365.5px;
+  top: 15px;
+}
+.card[for="32"] {
+  z-index: 5;
+  left: -366px;
+  top: 15.5px;
+}
+.card[for="33"] {
+  z-index: 4;
+  left: -366.5px;
+  top: 16px;
+}
+.card[for="34"] {
+  z-index: 3;
+  left: -367px;
+  top: 16.5px;
+}
+.card[for="35"] {
+  z-index: 2;
+  left: -367.5px;
+  top: 17px;
+}
+.card[for="36"] {
+  z-index: 1;
+  left: -368px;
+  top: 17.5px;
+}
+.card .card__face_down {
+  background-image: url("../img/card.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  box-shadow: 0 0.45px 1px #a8a8a8;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.card .hearts {
+  transform: perspective(400px) rotateY(-90deg);
+  background-color: #FF0800;
+}
+.card .spades {
+  transform: perspective(400px) rotateY(-90deg);
+  background-color: #C7C7C7;
+}
+.card .diamonds {
+  transform: perspective(400px) rotateY(-90deg);
+  background-color: #FFAE23;
+}
+.card .clubs {
+  transform: perspective(400px) rotateY(-90deg);
+  background-color: #323232;
+}
+.card .card__face {
+  width: 250px;
+  height: 330px;
+  transition: 1s;
+  border-radius: 10px;
+}
+
+@keyframes cardsMoving {
+  0% {
+    left: -350px;
+  }
+  50% {
+    left: -175px;
+    z-index: 36;
+  }
+  100% {
+    left: 0;
+    top: 10px;
+    z-index: 36;
+  }
+}
