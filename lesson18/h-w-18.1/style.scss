@@ -12,12 +12,11 @@ body {
     width: 600px;
     height: 100vh;
     margin: 0 auto;
-
     display: flex;
     justify-content: flex-end;
     align-items: center;
 
-    &__card {
+    .wrapper__card {
         width: 250px;
         height: 330px;
         position: relative;
@@ -54,7 +53,7 @@ body {
         &[for="#{$i}"] {
             z-index: 37 - $i;
             left: -350px - $i * 0.5;
-            top: ($i - 1) * 0.50px;
+            bottom: ($i - 1) * 0.50px;
         }
     }
 
@@ -112,7 +111,7 @@ body {
 
     100% {
         left: 0;
-        top: 10px;
+        top: 0;
         z-index: 36;
     }
 }

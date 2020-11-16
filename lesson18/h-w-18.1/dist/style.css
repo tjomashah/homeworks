@@ -16,7 +16,7 @@ body {
   justify-content: flex-end;
   align-items: center;
 }
-.wrapper__card {
+.wrapper .wrapper__card {
   width: 250px;
   height: 330px;
   position: relative;
@@ -43,182 +43,182 @@ body {
 .card[for="1"] {
   z-index: 36;
   left: -350.5px;
-  top: 0px;
+  bottom: 0px;
 }
 .card[for="2"] {
   z-index: 35;
   left: -351px;
-  top: 0.5px;
+  bottom: 0.5px;
 }
 .card[for="3"] {
   z-index: 34;
   left: -351.5px;
-  top: 1px;
+  bottom: 1px;
 }
 .card[for="4"] {
   z-index: 33;
   left: -352px;
-  top: 1.5px;
+  bottom: 1.5px;
 }
 .card[for="5"] {
   z-index: 32;
   left: -352.5px;
-  top: 2px;
+  bottom: 2px;
 }
 .card[for="6"] {
   z-index: 31;
   left: -353px;
-  top: 2.5px;
+  bottom: 2.5px;
 }
 .card[for="7"] {
   z-index: 30;
   left: -353.5px;
-  top: 3px;
+  bottom: 3px;
 }
 .card[for="8"] {
   z-index: 29;
   left: -354px;
-  top: 3.5px;
+  bottom: 3.5px;
 }
 .card[for="9"] {
   z-index: 28;
   left: -354.5px;
-  top: 4px;
+  bottom: 4px;
 }
 .card[for="10"] {
   z-index: 27;
   left: -355px;
-  top: 4.5px;
+  bottom: 4.5px;
 }
 .card[for="11"] {
   z-index: 26;
   left: -355.5px;
-  top: 5px;
+  bottom: 5px;
 }
 .card[for="12"] {
   z-index: 25;
   left: -356px;
-  top: 5.5px;
+  bottom: 5.5px;
 }
 .card[for="13"] {
   z-index: 24;
   left: -356.5px;
-  top: 6px;
+  bottom: 6px;
 }
 .card[for="14"] {
   z-index: 23;
   left: -357px;
-  top: 6.5px;
+  bottom: 6.5px;
 }
 .card[for="15"] {
   z-index: 22;
   left: -357.5px;
-  top: 7px;
+  bottom: 7px;
 }
 .card[for="16"] {
   z-index: 21;
   left: -358px;
-  top: 7.5px;
+  bottom: 7.5px;
 }
 .card[for="17"] {
   z-index: 20;
   left: -358.5px;
-  top: 8px;
+  bottom: 8px;
 }
 .card[for="18"] {
   z-index: 19;
   left: -359px;
-  top: 8.5px;
+  bottom: 8.5px;
 }
 .card[for="19"] {
   z-index: 18;
   left: -359.5px;
-  top: 9px;
+  bottom: 9px;
 }
 .card[for="20"] {
   z-index: 17;
   left: -360px;
-  top: 9.5px;
+  bottom: 9.5px;
 }
 .card[for="21"] {
   z-index: 16;
   left: -360.5px;
-  top: 10px;
+  bottom: 10px;
 }
 .card[for="22"] {
   z-index: 15;
   left: -361px;
-  top: 10.5px;
+  bottom: 10.5px;
 }
 .card[for="23"] {
   z-index: 14;
   left: -361.5px;
-  top: 11px;
+  bottom: 11px;
 }
 .card[for="24"] {
   z-index: 13;
   left: -362px;
-  top: 11.5px;
+  bottom: 11.5px;
 }
 .card[for="25"] {
   z-index: 12;
   left: -362.5px;
-  top: 12px;
+  bottom: 12px;
 }
 .card[for="26"] {
   z-index: 11;
   left: -363px;
-  top: 12.5px;
+  bottom: 12.5px;
 }
 .card[for="27"] {
   z-index: 10;
   left: -363.5px;
-  top: 13px;
+  bottom: 13px;
 }
 .card[for="28"] {
   z-index: 9;
   left: -364px;
-  top: 13.5px;
+  bottom: 13.5px;
 }
 .card[for="29"] {
   z-index: 8;
   left: -364.5px;
-  top: 14px;
+  bottom: 14px;
 }
 .card[for="30"] {
   z-index: 7;
   left: -365px;
-  top: 14.5px;
+  bottom: 14.5px;
 }
 .card[for="31"] {
   z-index: 6;
   left: -365.5px;
-  top: 15px;
+  bottom: 15px;
 }
 .card[for="32"] {
   z-index: 5;
   left: -366px;
-  top: 15.5px;
+  bottom: 15.5px;
 }
 .card[for="33"] {
   z-index: 4;
   left: -366.5px;
-  top: 16px;
+  bottom: 16px;
 }
 .card[for="34"] {
   z-index: 3;
   left: -367px;
-  top: 16.5px;
+  bottom: 16.5px;
 }
 .card[for="35"] {
   z-index: 2;
   left: -367.5px;
-  top: 17px;
+  bottom: 17px;
 }
 .card[for="36"] {
   z-index: 1;
   left: -368px;
-  top: 17.5px;
+  bottom: 17.5px;
 }
 .card .card__face_down {
   background-image: url("../img/card.jpg");
@@ -263,7 +263,7 @@ body {
   }
   100% {
     left: 0;
-    top: 10px;
+    top: 0;
     z-index: 36;
   }
 }
