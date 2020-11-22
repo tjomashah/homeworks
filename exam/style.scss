@@ -1,0 +1,738 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    padding: 0.366vw;
+
+    .container {
+        width: 100%;
+        height: 100vh;
+        color: white;
+
+        img {
+            max-width: 100%;
+            object-fit: cover;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .container__header {
+            width: 100%;
+            height: 100%;
+            background-image: url(../source/img/bg_header.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+
+            .header__content {
+                height: 100%;
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+
+                .header__description {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+
+                    .header__header {
+                        text-align: center;
+                        padding-bottom: 2.660vw;
+
+                        >h1 {
+                            font-size: 3.514vw;
+                            font-family: 'Josefin Sans', sans-serif;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            letter-spacing: 0.146vw;
+                            margin-bottom: 1.464vw;
+                        }
+
+                        >p {
+                            font-size: 1.611vw;
+                            line-height: 1.903vh;
+                            font-family: 'Josefin Sans', sans-serif;
+                            font-weight: 300;
+                            letter-spacing: 0.366vw;
+                        }
+                    }
+
+
+                    .header__scroll {
+                        text-align: center;
+
+                        .scroll__descr {
+                            font-size: 1.025vw;
+                            font-weight: 1.903vh;
+                            font-family: 'Josefin Sans', sans-serif;
+                            font-weight: 300;
+                        }
+                    }
+
+                    .header__search-bar {
+                        display: flex;
+                        margin-bottom: 4.785vw;
+                        position: relative;
+
+                        .search-bar__error {
+                            position: absolute;
+                            bottom: -20px;
+                            letter-spacing: 0.146vw;
+                        }
+
+                        .search-bar__input {
+                            width: 30.603vw;
+                            height: 8.120vh;
+                            border: none;
+                            padding-left: 0.732vw;
+
+                            &:invalid~.search-bar__error {
+                                visibility: visible;
+                                color: red;
+                                font-size: 1.025vw;
+                            }
+
+                            &~.search-bar__error {
+                                visibility: hidden;
+                                color: red;
+                                font-size: 1.025vw;
+                            }
+
+                            &:focus {
+                                outline: none;
+                            }
+
+                            &::placeholder {
+                                text-align: center;
+                                font-size: 1.025vw;
+                                line-height: 1.903vh;
+                                font-family: 'Josefin Sans', sans-serif;
+                                font-weight: 300;
+                            }
+                        }
+
+                        .header__btn {
+                            width: 10.981vw;
+                            height: 8.120vh;
+                            background-color: white;
+                            padding: 0.146vw;
+                            border: none;
+
+                            &>div {
+                                background-color: #5474fd;
+                                width: 100%;
+                                height: 100%;
+
+                                &>a {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    width: 100%;
+                                    height: 100%;
+                                    justify-content: space-evenly;
+                                }
+
+                                .fas {
+                                    color: white;
+                                    font-size: 1.171vw;
+                                }
+                            }
+
+                            .btn__descr {
+                                font-family: 'Aleo', serif;
+                                font-weight: 400;
+                                font-size: 1.025vw;
+                                line-height: 1.903vh;
+                                text-transform: uppercase;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .header__footer {
+                width: 100%;
+                background-color: #5474fd;
+                display: flex;
+                justify-content: center;
+
+                .header__menu {
+                    width: 70%;
+                    padding: 1.464vw 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .nav__logo {
+
+                        .logo__descr {
+                            text-transform: uppercase;
+                            font-size: 1.757vw;
+                            font-family: 'Josefin Sans', sans-serif;
+                            font-weight: 700;
+                        }
+                    }
+
+                    >nav {
+                        width: 50%;
+
+                        .nav__list {
+                            display: flex;
+                            list-style-type: none;
+                            text-transform: uppercase;
+                            justify-content: space-evenly;
+
+                            .list__items {
+                                font-family: 'Aleo', serif;
+                                font-weight: 400;
+                                font-size: 1.025vw;
+                            }
+                        }
+                    }
+                }
+
+                #menu-checkbox {
+                    display: none;
+                }
+            }
+        }
+
+        @media screen and (min-width: 320px) and (max-width:768px) {
+            .search-bar__input {
+                width: 70% !important;
+                height: 100% !important;
+            }
+
+            .header__btn {
+                width: 25% !important;
+                height: 100% !important;
+            }
+
+            .header__menu {
+                width: 90% !important;
+            }
+
+            .nav__logo {
+                display: none;
+            }
+
+            .header__navigation {
+                display: none;
+                // width: 100%;
+            }
+
+            .toggle-button {
+                text-align: center;
+                display: block;
+                cursor: pointer;
+                color: white;
+                text-transform: uppercase;
+                font-size: 2.171vw;
+                letter-spacing: 2px;
+            }
+
+            .toggle-button:after {
+                content: attr(data-open);
+                display: block;
+                // position: absolute;
+                // bottom: 0.5%;
+                // left: 2%;
+                // margin-left: 20px;
+            }
+
+            .nav__list {
+                display: flex;
+                align-items: center;
+                // flex-direction: column;
+                // position: absolute;
+                // bottom: 1%;
+                // right: 15%;
+                width: 100%;
+
+                .list__items {
+                    font-size: 1.325vw;
+                }
+            }
+        }
+    }
+
+    #menu-checkbox:checked~.header__navigation {
+        display: block;
+        width: 70%;
+    }
+
+    #menu-checkbox:checked+.toggle-button::after {
+        content: attr(data-close);
+    }
+}
+
+
+// container choose us
+.container__choose-us {
+    width: 100%;
+    height: 100%;
+    background-image: url(../source/img/bg_choose.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+    .choose-us__content {
+        width: 70%;
+        height: 100%;
+        display: flex;
+
+        .choose-us__description {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .choose-us__header {
+
+                >h2 {
+                    font-size: 2.635vw;
+                    font-family: 'Aleo', serif;
+                    font-weight: 400;
+                }
+            }
+
+            .choose-us__info {
+                margin: 4.758vw 0 3.660vw;
+
+                >p {
+                    font-size: 1.171vw;
+                    font-family: 'Josefin Sans', sans-serif;
+                    font-weight: 300;
+                    line-height: 3.903vh;
+                    letter-spacing: 1px;
+
+                    &:last-child {
+                        margin-top: 2.635vw;
+                    }
+                }
+            }
+
+            .choose-us__btn {
+
+
+                >button {
+                    background-color: #5474fd;
+                    color: white;
+                    font-size: 1.171vw;
+                    font-family: 'Aleo', serif;
+                    font-weight: 400;
+                    line-height: 1.903vh;
+                    text-transform: uppercase;
+                    border: none;
+                    width: 16.471vw;
+                    height: 4.392vh;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+
+        .choose-us__images {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            &>div:first-child {
+                text-align: center;
+            }
+
+            &>div:last-child {
+                text-align: end;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width:768px) {
+    .choose-us__info>p {
+        line-height: 1.903vh !important;
+    }
+}
+
+// container how it works
+.container__how-works {
+    width: 100%;
+    height: 40%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .how-works__content {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+
+        &>div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            &:hover {
+                opacity: 0.5;
+            }
+
+            &>a p {
+                font-family: 'Aleo', serif;
+                font-weight: 400;
+                font-size: 2.635vw;
+                margin-top: 2.196vh;
+            }
+        }
+    }
+}
+
+// container travel's hotel
+.container__travel-hotel {
+    width: 100%;
+    height: 100%;
+    background-image: url(../source/img/bg_madrid.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+
+    .travel-hotel__content {
+        width: 70%;
+        height: 83%;
+        display: flex;
+        align-items: flex-end;
+
+        .travel-hotel__description {
+            background-color: rgba(0, 0, 0, 0.7);
+            opacity: 0.9;
+            width: 33.531vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 3.660vw 1.196vw;
+
+            &:hover {
+                opacity: 1;
+                background-color: rgba(0, 0, 0, 0.9);
+            }
+
+            .travel-hotel__country {
+                font-family: 'Josefin Sans', sans-serif;
+                font-weight: 300;
+                font-size: 1.464vw;
+                line-height: 1.903vh;
+                color: #cfcfce;
+            }
+
+            .travel-hotel__name {
+                font-family: 'Josefin Sans', sans-serif;
+                font-weight: 300;
+                font-size: 1.464vw;
+                line-height: 1.903vh;
+                text-transform: uppercase;
+                margin-top: 2.196vw;
+                color: #fff;
+            }
+
+            .travel-hotel__info {
+                font-family: 'Josefin Sans', sans-serif;
+                font-weight: 300;
+                font-size: 1.171vw;
+                line-height: 3.903vh;
+                margin: 2.196vw 0 3.660vw;
+                color: #cfcfce;
+            }
+
+            .travel-hotel__btn {
+
+                &>button {
+                    width: 16.471vw;
+                    height: 4.392vh;
+                    font-family: 'Aleo', serif;
+                    font-weight: 400;
+                    font-size: 1.171vw;
+                    line-height: 1.903vh;
+                    text-transform: uppercase;
+                    background-color: #5474fd;
+                    border: none;
+                    color: white;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width:768px) {
+    .travel-hotel__info {
+        line-height: 2.003vh !important;
+    }
+}
+
+// container travel's place
+.container__travel-place {
+    width: 100%;
+    height: 100%;
+    background-image: url(../source/img/bg_spain.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+    .travel-place__content {
+        width: 70%;
+        height: 83%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+
+        .travel-place__description {
+            background-color: rgba(0, 0, 0, 0.7);
+            opacity: 0.9;
+            width: 33.531vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 3.660vw 1.196vw;
+
+            &:hover {
+                opacity: 1;
+                background-color: rgba(0, 0, 0, 0.9);
+            }
+
+            .travel-place__country {
+                font-family: 'Josefin Sans', sans-serif;
+                font-weight: 300;
+                font-size: 1.464vw;
+                line-height: 1.903vh;
+                color: #cfcfce;
+            }
+
+            .travel-place__name {
+                font-family: 'Josefin Sans', sans-serif;
+                font-weight: 300;
+                font-size: 1.464vw;
+                line-height: 1.903vh;
+                text-transform: uppercase;
+                margin-top: 2.196vw;
+                color: #fff;
+            }
+
+            .travel-place__info {
+                font-family: 'Josefin Sans', sans-serif;
+                font-weight: 300;
+                font-size: 1.171vw;
+                line-height: 3.903vh;
+                margin: 2.196vw 0 3.660vw;
+                color: #cfcfce;
+            }
+
+            .travel-place__btn {
+
+                &>button {
+                    width: 16.471vw;
+                    height: 4.392vh;
+                    font-family: 'Aleo', serif;
+                    font-weight: 400;
+                    font-size: 1.171vw;
+                    line-height: 1.903vh;
+                    text-transform: uppercase;
+                    background-color: #5474fd;
+                    border: none;
+                    color: white;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width:768px) {
+    .travel-place__info {
+        line-height: 2.003vh !important;
+    }
+}
+
+// container tourist
+.container__tourist {
+    width: 100%;
+    height: 100%;
+    background-image: url(../source/img/bg_tourist.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .tourist__header {
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        >h2 {
+            font-family: 'Aleo', serif;
+            font-weight: 400;
+            font-size: 2.635vw;
+        }
+    }
+
+    .tourist__content {
+        height: 70%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+
+        .tourist__description {
+            display: flex;
+            width: 70%;
+            height: 70%;
+
+            >.tourist__image {
+                width: 43%;
+
+                >img {
+                    height: 100%;
+                }
+            }
+
+            >.tourist__quote {
+                width: 57%;
+                background-color: #333;
+                padding: 3.660vw 4.026vw 0 4.392vw;
+
+                >h4 {
+                    font-family: 'Josefin Sans', sans-serif;
+                    font-weight: 300;
+                    font-size: 1.464vw;
+                    line-height: 1.903vh;
+                    margin-bottom: 2.562vw;
+                }
+
+                >p {
+                    font-family: 'Josefin Sans', sans-serif;
+                    font-weight: 300;
+                    font-size: 1.171vw;
+                    line-height: 2.903vh;
+                    padding-top: 0.732vw;
+                }
+
+                &>.fas {
+                    color: #5474fd;
+                    float: left;
+                    margin-right: 0.732vw;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width:768px) {
+    .tourist__description {
+
+        >.tourist__image {
+            width: 43%;
+
+            >img {
+                height: 50% !important;
+            }
+        }
+
+        >.tourist__quote {
+            padding: 2.660vw 3.026vw 0 3.392vw !important;
+            height: 50%;
+
+            >h4 {
+                line-height: 0.903vh !important;
+            }
+
+            >p {
+                line-height: 1.903vh !important;
+            }
+
+        }
+    }
+}
+
+// container footer
+.container__footer {
+    width: 100%;
+    height: 30%;
+    background-color: #232323;
+
+    .footer__content {
+        height: 100%;
+
+        .footer__description {
+            display: flex;
+            flex-direction: column;
+            height: 60%;
+            justify-content: flex-end;
+            align-items: center;
+            margin-bottom: 1.464vw;
+
+            >h2 {
+                font-family: 'Josefin Sans', sans-serif;
+                font-weight: 700;
+                font-size: 1.757vw;
+                text-transform: uppercase;
+                margin-bottom: 0.90vw;
+                letter-spacing: 0.073vw;
+            }
+
+            >p {
+                font-family: 'Josefin Sans', sans-serif;
+                font-weight: 300;
+                font-size: 1.171vw;
+                line-height: 1.903vh;
+                letter-spacing: 0.037vw;
+            }
+        }
+
+        .footer__socials {
+            text-align: center;
+
+            >img:nth-child(2) {
+                margin: 0 1.000vw;
+            }
+
+            >img:nth-child(4) {
+                margin: 0 1.000vw;
+            }
+        }
+    }
+}
